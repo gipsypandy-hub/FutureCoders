@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>servicio al cliente</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Bahnschrift, Segoe UI, Arial;
+            background:#F8FCFF;
+            color:#1F2937;
+        }
+
+        .navbar{
+            background:#0b1d2a;
+            color:white;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:18px;
+        }
+
+        .menu a{
+            color:white;
+            margin-left:20px;
+            text-decoration:none;
+        }
+
+        .menu a:hover{
+            color:#00BFFF;
+        }
+
+        .header{
+            background-image:url("https://i.pinimg.com/736x/5a/ee/9f/5aee9fac09f797f17123e200bf49b5e7.jpg");
+            background-size:cover;
+            background-position:center;
+            height:400px;
+            position:relative;
+        }
+
+        .overlay{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.4);
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .overlay h1{
+            font-size:40px;
+            margin:10px 0;
+        }
+
+        .overlay .btn{
+            background:#0077CC;
+            padding:10px 20px;
+            border-radius:5px;
+            margin-top:10px;
+        }
+
+        .container{
+            width:85%;
+            margin:auto;
+            margin-top:20px;
+        }
+
+        .grid{
+            display:flex;
+            gap:20px;
+        }
+
+        .col{
+            width:50%;
+        }
+
+        .card{
+            background:#D9F4FF;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .card h3{
+            color:#003B73;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            border-radius:5px;
+            border:1px solid #ccc;
+        }
+
+        .btn{
+            background:#0077CC;
+            color:white;
+            padding:10px;
+            margin-top:10px;
+            border-radius:5px;
+            text-align:center;
+        }
+
+        .btn:hover{
+            background:#005B99;
+        }
+
+        .info{
+            margin-bottom:10px;
+        }
+
+        .icon{
+            width:25px;
+            height:25px;
+            background:#0077CC;
+            border-radius:50%;
+            display:inline-block;
+            margin-right:10px;
+        }
+
+        .img-deco{
+            width:100%;
+            border-radius:10px;
+            margin-top:10px;
+        }
+
+        .footer{
+            background:#1A1A1A;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">FutureCoders</div>
+        <div class="menu">
+            <a href="../index.html">REGRESAR</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="overlay">
+            <h2>Bienvenido a FutureCoders</h2>
+            <h1>ENCANTADOS EN CONOCERTE</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="col">
+
+                <div class="card">
+                    <h3>Formulario de contacto</h3>
+
+                    <p><span class="icon"></span>Nombre</p>
+                    <input type="text">
+
+                    <p><span class="icon"></span>Correo</p>
+                    <input type="text">
+
+                    <p><span class="icon"></span>Mensaje</p>
+                    <input type="text">
+
+                    <div class="btn">Enviar</div>
+                </div>
+
+                <div class="card">
+                    <h3>Dudas o Problemas Técnicos</h3>
+                    <p>Reporta errores del sistema, fallos o inconvenientes técnicos.</p>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card">
+                    <h3>Información de contacto</h3>
+
+                    <p class="info"><span class="icon"></span>Teléfono: +502 1234 5678</p>
+                    <p class="info"><span class="icon"></span>Correo: soporte@empresa.com</p>
+                </div>
+
+                <div class="card">
+                    <h3>Horario de atención</h3>
+
+                    <p><span class="icon"></span>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                    <p><span class="icon"></span>Sábado: 8:00 AM - 12:00 PM</p>
+                    <p><span class="icon"></span>Domingo: Cerrado</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Soporte al cliente - Oficina Central
+    </div>
+
+</body>
+</html>
